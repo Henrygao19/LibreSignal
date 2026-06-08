@@ -142,7 +142,7 @@ class Simulation:
         payment_id = f"payment{self.payment_counter}"
         
         # Store payment status
-        account.payments[payment_id] = "IN_PROGRESS"
+        account.payments[account_id][payment_id] = "IN_PROGRESS"
         
         # Record balance after payment
         account.record_balance(timestamp)
